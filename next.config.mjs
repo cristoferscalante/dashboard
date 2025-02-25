@@ -21,6 +21,9 @@ const nextConfig = {
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
+  output: 'export',  // 🔹 Habilita la exportación estática
+  basePath: '/dashboard', // 🔹 Ajusta esto con el nombre de tu repo
+  assetPrefix: '/dashboard/', // 🔹 Asegura que los assets se carguen bien
 }
 
 mergeConfig(nextConfig, userConfig)
